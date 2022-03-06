@@ -28,7 +28,7 @@ let width=rect.width;
 //Les fonctions
 let onScroll= function(){
     console.log('En scroll');
-    if( scrolly() > top+800){
+    if( scrolly() > top+400){
         goAhead.style.display="block";
     }
     else{
