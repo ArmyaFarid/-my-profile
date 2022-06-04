@@ -62,7 +62,11 @@ P{
 	padding-top: 6px;
 	border-radius: 5px;
 	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+	cursor: pointer;
+	transform: scale(1);
 	transition: background-color 1s;
+	transition-property: transform;
+    transition-duration: 400ms;
 }
 
 
@@ -74,8 +78,10 @@ P{
 	font-size: 16px;
 }
 
+
 .btn-blue:hover{
 	background-color: #24292F;
+	transform: scale(1.15);
 }
 
 
@@ -143,17 +149,82 @@ P{
 	color:#146EBE;
 	opacity: 0.3;
 	transition:color 2s, opacity 1s;
+	cursor: pointer;
+	transform: scale(1);
+	transition-property: transform;
+    transition-duration: 400ms;
 
 }
 
 .social-horizontale i:hover {
 	color:black;
 	opacity: 1;
+	transform: scale(1.15);
 }
 
 .ahead-fix{
 	display: none;
 }
+
+
+
+
+.getCv-card{
+	display: none;
+	position:fixed;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    padding: auto;
+    width: 400px;
+    height: 300px;
+	margin-left: -200px; /* Cette valeur doit être la moitié négative de la valeur du width */
+    margin-top: -150px;
+	background-color:rgba(135, 163, 240, 0.271) ;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(5, 2, 2, 0.244);
+    font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+}
+
+
+#home-page-photo{
+	border-radius: 50%;
+}
+
+
+
+.btn{
+	width: 60px;
+	height: 40px;
+	margin-bottom: 15px;
+	padding-top: 6px;
+	border-radius: 5px;
+	border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+	cursor: pointer;
+}
+
+.btn-red{
+    background-color: rgba(229, 11, 29, 0.336);
+}
+
+.btn-green{
+    background-color: rgba(20, 223, 58, 0.445);
+}
+
+.redirect-box {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+
 
 
 @media (max-width: 800px ) {
