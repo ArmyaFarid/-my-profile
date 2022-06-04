@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+/*font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+body{
+	background-color: rgb(240, 241, 243);
+}
+
+
+
+h1{
+	font-family: 'Inter', sans-serif;
+	color: #146EBE;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+h2{
+	
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgb(116,81,235);
+	text-align: center;
+}
+
+h3{
+	margin: 0px 0px;
+}
+
+P{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+#principal-center{
+	margin: 0 auto;
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+}
+
+.home-card-white{
+	padding: auto;
+	background-color:rgb(253, 251, 252) ;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+
+}
+
+#home-page-photo{
+	border-radius: 50%;
+}
+
+.btn-blue{
+	background-color:#146EBE;
+	width: 140px;
+	height: 30px;
+	margin: 15px auto;
+	padding-top: 6px;
+	border-radius: 5px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+	cursor: pointer;
+	transform: scale(1);
+	transition: background-color 1s;
+	transition-property: transform;
+    transition-duration: 400ms;
+}
+
+
+.btn-blue a {
+	font-family: 'Inter', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+.btn-blue:hover{
+	background-color: #24292F;
+	transform: scale(1.15);
+}
+
+
+.card-white{
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	height: auto;
+	background-color:rgb(253, 251, 252) ;
+	border-radius: 5px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+	
+	transition: color 1s;
+
+}
+
+.card-white:hover{
+	box-shadow: 0 10px 60px rgb(116,81,235,0.3);
+
+}
+
+.contact-center{
+		text-align: center;
+}
+
+.incard-info{
+	display: flex;
+	justify-content: space-around;
+}
+
+.incard-info > ul{
+	margin-top: 0px;
+	list-style: none; /* kill the bullet points */
+  padding-left: 0px;
+  font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	display: inline;
+}
+
+
+
+.info-center p{
+	margin: 5px auto;
+	flex-direction: row;
+}
+
+
+.info-center >p {
+	margin-top: 0px;
+}
+
+.social-horizontale {
+	list-style: none; /* kill the bullet points */
+  padding-left: 0px;
+}
+
+.social-horizontale > li {
+  display: inline; /* change list item behavior to inline */
+  padding: 0px 20px; /* add som left/right padding between list items */
+}
+
+.social-horizontale i {
+	font-size: 50px;
+	border-radius: 50%;
+	color:#146EBE;
+	opacity: 0.3;
+	transition:color 2s, opacity 1s;
+	cursor: pointer;
+	transform: scale(1);
+	transition-property: transform;
+    transition-duration: 400ms;
+
+}
+
+.social-horizontale i:hover {
+	color:black;
+	opacity: 1;
+	transform: scale(1.15);
+}
+
+.ahead-fix{
+	display: none;
+}
+
+
+
+
+.getCv-card{
+	display: none;
+	position:fixed;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    padding: auto;
+    width: 400px;
+    height: 300px;
+	margin-left: -200px; /* Cette valeur doit être la moitié négative de la valeur du width */
+    margin-top: -150px;
+	background-color:rgba(135, 163, 240, 0.271) ;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(5, 2, 2, 0.244);
+    font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+}
+
+
+#home-page-photo{
+	border-radius: 50%;
+}
+
+
+
+.btn{
+	width: 60px;
+	height: 40px;
+	margin-bottom: 15px;
+	padding-top: 6px;
+	border-radius: 5px;
+	border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+	cursor: pointer;
+}
+
+.btn-red{
+    background-color: rgba(229, 11, 29, 0.336);
+}
+
+.btn-green{
+    background-color: rgba(20, 223, 58, 0.445);
+}
+
+.redirect-box {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+
+
+
+@media (max-width: 800px ) {
+  /* For a screen < 440px, this CSS will be read */
+h1{
+	font-size: 40px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3{
+	font-size: 25px;
+}
+
+P{
+	font-size: 20px;
+}
+
+#principal-center{
+	width: auto;
+}
+
+/*.home-card-white{
+	padding: auto;
+	background-color:rgb(253, 251, 252) ;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+
+}*/
+
+#home-page-photo{
+	border-radius: 50%;
+}
+
+/*.btn-blue{
+	background-color:#146EBE;
+	opacity: ;
+	width: 140px;
+	height: 30px;
+	margin: 15px auto;
+	padding-top: 6px;
+	border-radius: 5px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+	transition: background-color 1s;
+}
+
+.card-white{
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	height: auto;
+	background-color:rgb(253, 251, 252) ;
+	border-radius: 5px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+	
+	transition: color 1s;
+
+}
+*/
+
+.incard-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+.incard-info > ul{
+	font-size: 20px;
+	display: inline;
+}
+
+.ahead-fix{
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	position: fixed;
+	right: 10px;
+	bottom: 0px;
+	z-index: 1;
+	display: none;
+	margin: 15px auto;
+}
+
+.ahead-fix i {
+	font-size: 50px;
+	border-radius: 50%;
+	color:#24292F;
+	box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+
+
+/*
+.info-center p{
+	margin: 5px auto;
+	flex-direction: row;
+}
+
+.info-center >p {
+	margin-top: 0px;
+}
+.social-horizontale > li {
+  display: inline; 
+  padding: 0px 20px; 
+}
+
+*/
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
