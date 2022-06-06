@@ -65,7 +65,7 @@ let onScroll= function(){
     console.log(top+800);
     if( scrolly() > top+800){
         goAhead.style.display="block";
-        if(scrolly() > top+1550){
+        if(scrolly() > top+1520){
             console.log("work");
             pageOnBlur.style.opacity="0.1";
             getCvElement.style.display="block";            
